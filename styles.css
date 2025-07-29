@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url('./assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DMSans', sans-serif;
+  background-color: #F5F5F5;
+  color: hsl(228, 12%, 44%);
+  line-height: 1.5;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1100px;
+  height: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 0;
+}
+
+.left-col {
+  flex-basis: 220px;
+  max-width: 220px;
+  min-width: 200px;
+}
+
+.center-col {
+  flex-basis: 420px;
+  max-width: 420px;
+  min-width: 380px;
+}
+
+.right-col {
+  flex-basis: 260px;
+  max-width: 260px;
+  min-width: 240px;
+}
+
+/* --- Card Styles --- */
+.rect {
+  border-radius: 16px;
+  padding: 24px 20px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #FFCC69;
+  min-height: 100px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 0;
+}
+
+/* Specific cards */
+.create-schedule {
+  background: #f9eee3;
+  height: 320px;
+  justify-content: flex-start;
+}
+.write-ai {
+  background: #FFCC69;
+  height: 180px;
+  justify-content: flex-start;
+}
+.main-title {
+  background: #7651DC;
+  color: #fff;
+  text-align: center;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px 12px 12px;
+}
+.manage-accounts {
+  background: #fff;
+  border: 1px solid #eee;
+  height: 90px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 12px;
+}
+.consistent-schedule {
+  background: #FFCC69;
+  height: 140px;
+  justify-content: flex-start;
+}
+.audience-growth {
+  background: #fff;
+  border: 1px solid #eee;
+  height: 90px;
+  justify-content: flex-start;
+  padding: 16px 12px;
+}
+.schedule-social {
+  background: #DCD1FC;
+  height: 320px;
+  justify-content: flex-start;
+  position: relative;
+  left: 100px;
+}
+.grow-followers {
+  background: #7651DC;
+  color: #fff;
+  height: 180px;
+  justify-content: flex-start;
+}
+
+/* --- Typography and Images --- */
+.rect-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.purple {
+  color: #7c5dfa;
+}
+.yellow {
+  color: #fcce73;
+}
+
+.rect-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto 0 auto;
+  overflow: hidden;
+}
+
+.main-title h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.main-title .yellow {
+  color: #fcce73;
+}
+.main-title .italic {
+  font-style: italic;
+}
+.stars {
+  margin: 6px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.stars img {
+  width: 80px;
+  height: auto;
+}
+.reviews {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.manage-accounts img {
+  width: 40px;
+  margin-right: 10px;
+}
+.accounts-info {
+  display: block;
+  text-align: left;
+}
+.accounts-info .rect-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.growth-num {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0;
+}
+.growth-text {
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 6px;
+}
+.audience-image img {
+  width: 48px;
+  margin-top: 4px;
+}
+
+.schedule-social .rect-img {
+  width: 100%;
+  max-width: 120px;
+  margin: 10px 0 0 0;
+}
+.rect-desc {
+  font-size: 0.85rem;
+  margin-top: 6px;
+  color: #7c4dff;
+}
+
+.grow-followers .rect-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+  color: hsl(228, 12%, 44%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+  .container {
+    width: 98vw;
+    padding: 16px 1vw;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    width: 98vw;
+    min-width: 320px;
+    padding: 10px 0;
+    gap: 0;
+  }
+  .column {
+    width: 100%;
+    margin: 0 0 16px 0;
+    gap: 16px;
+  }
+  .rect {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+}
